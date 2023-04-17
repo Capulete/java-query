@@ -13,8 +13,6 @@ import java.util.concurrent.Executors;
 public class Server {
     private final int threadPool;
     private final int PORT;
-    public static final String GET = "GET";
-    public static final String POST = "POST";
     private final ConcurrentHashMap<String, ConcurrentHashMap<String, Handler>> handlers = new ConcurrentHashMap<>();
 
     public Server(int port, int threadPool) {
